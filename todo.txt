@@ -1,0 +1,1 @@
+1. Need to figure out how to add a name to the image and make it responsive!
