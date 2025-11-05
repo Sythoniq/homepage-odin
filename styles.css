@@ -3,164 +3,90 @@
   margin: 0px;
 }
 
-@media screen and (width < 500px) {
-  body {
-    display: grid;
-    grid-template: repeat(3, .25fr) / 1fr;
-    padding: 1rem;
-    row-gap: 1.5rem;
-  } 
-
-  .header {
-    height: min-content;
-  }
-
-  .bg-style {
-    position: absolute;
-    top: -25%;
-    left: 0;
-    height: 80%;
-    width: 100%;
-    background: linear-gradient(135deg, #00E4D0, #FFD700);
-    z-index: -1;
-    transform: skewY(-20deg);
-  }
-
-  .wrapper {
-    display: grid;
-    grid-template: fit-content(100px) .5fr / 1fr;
-  }
-
-  .img-wrapper {
-    display: grid;
-    grid-template: 1fr / 1fr;
-    justify-items: center;
-  }
-
-  .img-wrapper > img {
-    max-width: 75%;
-    border-radius: 12px;
-    box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.4);
-    max-inline-size: 75%;
-  }
-
-  .about {
-    padding: 0.5rem;
-    font-size: 1.2em;
-    font-family: monospace;
-    font-weight: 600;
-  }
-
-  .about-title {
-    text-align: center;
-    font-size: 1.4rem;
-    padding: 0.25em;
-    text-decoration: underline;
-  }
-
-  .main {
-    display: grid;
-    grid-template: 50px repeat(6, .25fr) / 1fr;
-    gap: 1.2rem;
-    width: fit-content;
-  }
-
-  .main-title {
-    justify-self: center;
-  }
-
-  .manhwa {
-    display: grid;
-    grid-template: fit-content(100px) .5fr / 1fr;
-    justify-items: center;
-    box-shadow: 2px 5px 10px 2px #9B5597;
-  }
-
-  .manhwa > img {
-    max-width: 75%;
-  }
-
-  .manhwa > .content {
-    display: grid;
-    grid-template: .25fr .25fr / 1fr;
-    background-color: #9B5597;
-    padding: 1.25rem;
-    font-size: 1.5em;
-    font-family: monospace;
-    font-weight: 600;
-    color: #EDE8E6;
-  }
-
-  .card-heading {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-decoration: underline;
-    font-size: 1.5rem;
-  }
-
-  .card-links {
-    display: flex;
-    gap: .25rem;
-  }
-
-  .card-links > * {
-    min-width: 1.5rem; 
-    cursor: pointer;
-  } 
-
-  .footer-content {
-    display: grid;
-    grid-template: .15fr .2fr .2fr fit-content(200px) / 1fr;
-    justify-items: center;
-    padding: 0.5rem;
-    font-size: 1.5em;
-    background-color: #70DE75;
-  }
-
-  .more-txt {
-    display: grid;
-    grid-template: .25fr .2fr .2fr / 1fr;
-    row-gap: .5em;
-    font-weight: 700;
-    font-family: monospace;
-  }
-
-  .links {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    max-width: 100%;
-    width: auto;
-    gap: 1.2rem;
-    padding: 0.5rem;
-  }
-  
-  .links > svg {
-    width: 3.5em;
-  }
-
-  .f-img > img {
-    max-width: 100%;
-    justify-self: center;
-    box-shadow: 2px 10px 12px 2px rgba(0, 0, 0, 0.5);
-  }
+/* Style the body with grid
+to give the entire page a structure 
+such that there is 3 rows and one column.
+*/
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  padding: 1.25rem;
 }
 
-@media (width < 780px) {
-  body {
-
-  }
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-@media (width < 1280) {
-  body {
-
-  }
+.wrapper > img {
+  min-width: 15%;
+  max-width: 25%;
+  box-shadow: -10px 5px 10px 10px rgba(0, 0, 0, 0.6);
 }
 
-@media (width >= 1281px) {
-  body {
+.about {
+  padding: 1.25em 0.5em;
+  max-width: 50%;
+  min-height: 50%;
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  font-size: 2em;
+  font-family: monospace;
+  font-weight: 600;
+  box-shadow: 10px 5px 5px 10px rgba(0, 0, 0, 0.6);
+}
 
-  }
+.about-links {
+  display: flex;
+  align-self: end;
+  min-width: 10%;
+}
+
+.main-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.75rem;
+}
+
+.heh {
+  font-size: 2.5rem;
+  text-decoration: underline;
+  font-family: monospace;
+  margin-bottom: 0.5em;
+}
+
+.manhwa {
+  box-shadow: 2px 0px 10px 5px rgba(0, 0, 0, 0.6);
+}
+
+.manhwa > img {
+  max-width: 100%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  gap: 1.2rem;
+  font-size: 1.8rem;
+  font-family: monospace;
+  font-weight: 600;
+  padding: 1rem .5rem;
+}
+
+.content-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.heading-links {
+  display: flex;
+  min-width: 20%;
 }
