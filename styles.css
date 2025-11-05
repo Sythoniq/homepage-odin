@@ -13,7 +13,10 @@ body {
   justify-content: center;
   align-items: center;
   gap: 2em;
-  padding: 1.25rem;
+}
+
+.header {
+  padding: 1.25em;
 }
 
 .wrapper {
@@ -89,4 +92,34 @@ body {
 .heading-links {
   display: flex;
   min-width: 20%;
+}
+
+.footer {
+  min-width: 100vw;
+  background: linear-gradient(140deg, #3551AC, #E8843F, #182138);
+}
+
+.footer-wrapper {
+  display: grid;
+  grid-template-columns: minmax(300px, 100%) fit-content(350px);
+  padding: 3em;
+  font-size: 2em;
+  font-family: monospace;
+  font-weight: 600;
+  justify-content: space-between;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+.footer-wrapper > img {
+  max-width: 100%;
+}
+
+.footer-links {
+  display: flex;
+  max-width: 15%;
 }
