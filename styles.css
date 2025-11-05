@@ -123,3 +123,41 @@ body {
   display: flex;
   max-width: 15%;
 }
+
+
+/* Media Queries Start From Here */
+@media screen and (480px <= width <= 1280px) {
+  /* Idk how to make the image float to the left of the div and also make the
+  * text adjust */
+}
+
+@media screen and (0px <= width <= 480px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    box-shadow: none;
+  }
+  
+  .wrapper > img {
+    max-width: 100%;
+    box-shadow: none;
+  }
+
+  .about {
+    max-width: 100%;
+    font-size: 1.7em;
+    font-weight: 800;
+    box-shadow: none;
+  }
+  
+  .about-links {
+    min-width: 25%;
+  }
+  
+  .footer-wrapper {
+    display: grid;
+    grid-template: .5fr fit-content(200px) / 1fr;
+    row-gap: 1.25em;
+  }
+}
