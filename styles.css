@@ -124,11 +124,41 @@ body {
   max-width: 15%;
 }
 
-
 /* Media Queries Start From Here */
+
+@media screen and (1281px <= width <= 1850px) {
+  .about {
+    font-size: 1.25em;
+    min-height: 25%;
+    max-height: 50%;
+  }
+
+  .footer-wrapper {
+    padding: 1.25em;
+    display: grid;
+    grid-template-columns: minmax(200px, 100%) fit-content(300px);
+  }
+
+  .footer-wrapper > img {
+    max-width: 100%;
+  }
+}
+
 @media screen and (480px <= width <= 1280px) {
   /* Idk how to make the image float to the left of the div and also make the
   * text adjust */
+  .about {
+    font-size: 1.1em;
+    min-height: 10%;
+    max-height: 25%;
+  } 
+  
+  .footer-wrapper {
+    padding: 1.25em;
+    display: grid;
+    grid-template-columns: minmax(100px, 100%) fit-content(250px);
+    font-size: 1.25em;
+  }
 }
 
 @media screen and (0px <= width <= 480px) {
