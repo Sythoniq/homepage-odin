@@ -64,6 +64,7 @@ body {
   display: flex;
   align-self: end;
   min-width: 10%;
+  cursor: pointer;
 }
 
 .main-wrapper {
@@ -107,6 +108,7 @@ body {
 .heading-links {
   display: flex;
   min-width: 20%;
+  cursor: pointer;
 }
 
 .footer {
@@ -137,6 +139,7 @@ body {
 .footer-links {
   display: flex;
   max-width: 15%;
+  cursor: pointer;
 }
 
 /* Media Queries Start From Here */
